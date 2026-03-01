@@ -170,7 +170,7 @@ export default function ChatPage() {
             <div className="space-y-2">
               <Label>Platform</Label>
               <PlatformSelect
-                value={form.platform}
+                value={form.platform ?? ""}
                 onValueChange={(v) =>
                   setForm((p) => ({ ...p, platform: v }))
                 }

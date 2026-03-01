@@ -582,7 +582,7 @@ export default function CalendarPage() {
                         ))}
                       </div>
                     )}
-                    {c.frequency && (
+                    {!!c.frequency && (
                       <p className="text-xs">Frequency: {String(c.frequency)}</p>
                     )}
                   </CardContent>
@@ -767,7 +767,7 @@ export default function CalendarPage() {
                               : String(ev.date || "").slice(0, 16)}
                             {ev.urgency ? ` — ${String(ev.urgency)}` : ""}
                           </p>
-                          {ev.type && (
+                          {!!ev.type && (
                             <Badge variant="outline" className="mt-1 text-xs">
                               {String(ev.type)}
                             </Badge>

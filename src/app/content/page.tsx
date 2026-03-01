@@ -254,7 +254,7 @@ export default function ContentPage() {
                 <div className="space-y-2">
                   <Label>Platform</Label>
                   <PlatformSelect
-                    value={form.platform}
+                    value={form.platform ?? ""}
                     onValueChange={(v) => update("platform", v)}
                     extraPlatforms={["threads"]}
                   />
